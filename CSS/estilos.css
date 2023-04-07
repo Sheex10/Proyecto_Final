@@ -1,0 +1,131 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(86, 229, 236);
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: rgb(151, 148, 148);
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #333;
+  }
+  
+  nav ul li:hover > ul {
+    display:inherit;
+  }
+  
+  nav ul ul li {
+    display: block;
+    position: relative;
+  }
+  
+  nav ul ul a {
+    color:white;
+    padding: 14px 16px;
+    display:block;
+  }
+  
+  nav ul ul a:hover {
+    background-color: rgb(86, 229, 236);
+  }
+  
+  nav ul ul ul {
+    position: absolute;
+    right: 100%;
+    top:0;
+    
+  }
+  
+.img_logo{
+    text-align: left;
+    width: 90px;
+    height: 140px;
+}
+
+/*  */
+
+/* Tamaño de imagen */
+
+#fotoperro{
+    max-width: 50%;
+  height: auto;
+  margin: 20px;
+  padding: 5px;
+  display: inline-block;
+  margin: auto;
+  }
+#fotoperro2{
+  max-width: 75%;
+height: auto;
+margin: 20px;
+padding: 5px;
+display: inline-block;
+margin: auto;
+}
+
+#fotoperro3{
+    max-width: 70%;
+  height: auto;
+  margin: 20px;
+  padding: 5px;
+  display: inline-block;
+  margin: auto;
+  }
+/* Fin */
+
+/*color de letra */
+#fuente1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: rgb(10, 8, 8);
+}
+
+/* CSS DE LA CATA*/
+/*Imagenes para mostrar juntas*/
+.imgPrincipal{
+  width: 350px;
+  height: 300px;
+  margin: 20px;
+}
+/*Fin*/
+
+/*Imagen para poducto con Descripción*/
+img{
+  width: 450px;
+  height: 400px;
+  margin: 20px;
+}
+/*Fin*/
+
+/*Fuente*/
+.fuente{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+/*Fin*/
+
+/*Para descripción*/
+.desc{
+  padding: 100px;
+}
+/*Fin*/
