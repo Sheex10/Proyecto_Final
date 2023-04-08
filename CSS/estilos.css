@@ -169,3 +169,7 @@ img{
   margin: 20px auto 0 auto;
 }
 /*Fin*/
+
+.transparent_box{
+  background: rgba(246, 249, 246, 0.961);
+}
