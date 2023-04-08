@@ -161,11 +161,6 @@ img{
   font-family: 'oswald', sans-serif;
 }
 
-<<<<<<< HEAD
-div.b {
-  text-align: left;
-}
-=======
 /*linea para separar*/
 .linea {
   border-top: 1px solid black;
@@ -174,4 +169,3 @@ div.b {
   margin: 20px auto 0 auto;
 }
 /*Fin*/
->>>>>>> a61f4f0813acc15c50ca83e5bf8fab28ea732d93

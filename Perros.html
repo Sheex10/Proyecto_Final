@@ -16,19 +16,41 @@
             background-repeat: no-repeat;
             background-size: 100%;
         }
-    </style>  
-    <nav>
-        <div class="container">
-            <input id="responsive-menu" type="checkbox">
-            <label for="responsive-menu">Menú <span id="menu-icon"></span></label>
-            <div id="overlay"></div>
-            <ul>
-                <li><a href="http://art.yale.edu/">Perfil</a></li>
-                <li><a href="gatos.html">Gatos</a></li>
-                <li><a href="perros.html">Perros</a></li>
+    </style> 
+    <header  class="navbar navbar-inverse navbar-fixed-top bs-docs-nav transparent-box" role="banner">
+        <div class="container" >
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" >
+              <span class="sr-only" >Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h2 href="./" class="navbar-brand" >HappyFootPrints</h2>
+          </div>
+          <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" >
+            <ul class="nav navbar-nav navbar-right " >
+              <li >
+                <a href="Sesion.html" >Inicio</a>
+              </li>
+              
+              <li class="dropdown" >
+                <a class="dropbtn">Productos<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Todos</a></li>
+                  <li><a href="gatos.html">Gatos</a></li>
+                  <li><a href="perros.html">Perros</a></li>
+                </ul>
+              </li>
+              <li >
+                <a href="#">Contactos</a>
+              </li>
             </ul>
+          </nav>
         </div>
-    </nav>
+      </header> 
+    <nav>
+        
     <div class="container">
         <div class="row" style="text-align: center;">
             <div class="col-md-4 col-sm-12">
