@@ -160,3 +160,7 @@ img{
 .descripcion{
   font-family: 'oswald', sans-serif;
 }
+
+div.b {
+  text-align: left;
+}
