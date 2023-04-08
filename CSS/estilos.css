@@ -160,3 +160,12 @@ img{
 .descripcion{
   font-family: 'oswald', sans-serif;
 }
+
+/*linea para separar*/
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+/*Fin*/
