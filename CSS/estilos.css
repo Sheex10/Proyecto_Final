@@ -85,7 +85,11 @@ img{
   color: rgb(255, 255, 255);
 }
 /*Fin*/
-
+.tituloss{
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 /*Botón de añadir a carrito*/
 .button {
   display: inline-block;
