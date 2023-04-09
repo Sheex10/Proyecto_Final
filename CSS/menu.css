@@ -88,9 +88,3 @@ button:hover{
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
-
-#moverDiv{
-	float: right;
-	width: 100%;
-    height: auto;
-}
