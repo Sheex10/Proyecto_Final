@@ -79,13 +79,16 @@ img{
 /*Para descripción*/
 .desc{
   font-family: 'Oswald', sans-serif;
-  text-align:center;
-  margin: 50px  ;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+
 
 }
 /*Fin*/
 .tituloss{
   font-family: 'Oswald', sans-serif;
+  text-align:center;
+  margin: 50px  ;
   text-shadow: 2px 2px rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
