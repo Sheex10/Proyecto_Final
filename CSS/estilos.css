@@ -303,10 +303,11 @@ input[type="checkbox"]{
 }
 
 .bn30:hover {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  background-image: linear-gradient(-45de, #4568dc, #b06ab3);
   box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
 }
 
 .bn30:hover .text {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
+
