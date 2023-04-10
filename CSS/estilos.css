@@ -85,6 +85,8 @@ img{
 
 }
 /*Fin*/
+
+
 .tituloss{
   font-family: 'Oswald', sans-serif;
   text-align:center;
@@ -121,14 +123,6 @@ img{
   font-family: 'oswald', sans-serif;
 }
 
-/*linea para separar*/
-.linea {
-  border-top: 1px solid black;
-  height: 2px;
-  padding: 0;
-  margin: 20px auto 0 auto;
-}
-/*Fin*/
 
 .transparent_box{
   background-color: rgba(255, 255, 255, 0.5) !important;
