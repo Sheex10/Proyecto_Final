@@ -287,3 +287,8 @@ hr.rounded {
   border-radius: 5px;
 }
   
+/*linea de separación delgada*/
+hr.rounded2 {
+  border-top: 2px solid rgb(0, 0, 0);
+  border-radius: 1px;
+}
