@@ -92,18 +92,6 @@ img{
 
 
 }
-.desc2{
-  font-family: 'Oswald', sans-serif;
-  color: rgb(0, 0, 0);
-
-
-}
-.titulosdesc{
-  font-family: 'Oswald', sans-serif;
-  text-align:center;
-  margin: 50px  ;
-  color: rgb(0, 0, 0);
-}
 /*Fin*/
 
 
@@ -403,3 +391,5 @@ img{
     font-weight:600
   }
 }
+
+/* CSS PARA CATALOGO  */
