@@ -393,3 +393,11 @@ img{
 }
 
 /* CSS PARA CATALOGO  */
+.catlogoo{
+  background-color: solid aqua;
+  width: 80px;
+  height: 70px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
+}
