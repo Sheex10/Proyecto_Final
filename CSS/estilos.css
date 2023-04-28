@@ -441,3 +441,12 @@ th, td {
   cursor: pointer;
   width: 150px;
 }
+
+#edit{
+  text-align: center;
+  width: 200px;
+  height: 90px;
+  margin: 100px;
+  background-color: rgb(79, 197, 35 );
+  border-style: hidden;
+}
