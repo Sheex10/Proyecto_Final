@@ -396,3 +396,37 @@ img{
   display: flex;
 }
 
+/*para la tabla del admin*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/*Estilos distintos para el admin*/
+#idk{
+  width: 150px;
+  height: 150px;
+}
+
+.bonn {
+  border-radius: 20%;
+  color: white;
+  padding: 16px 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#mas{
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  padding: 16px 30px;
+  font-size: 30px;
+  cursor: pointer;
+  width: 150px;
+}
