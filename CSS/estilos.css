@@ -67,7 +67,7 @@ margin: auto;
 }
 /*Fin*/
 
-/*Imagen para poducto con Descripción*/
+/*Imagen para producto con Descripción*/
 img{
   width: 450px;
   height: 400px;
@@ -156,7 +156,7 @@ img{
 }
 
 .header .logo img{
-    height: 70px;
+    height: 100px;
     width: auto;
     transition: all 0.3s;
 }
@@ -390,5 +390,9 @@ img{
     margin-right:0;
     font-weight:600
   }
+}
+
+.diseñopag1{
+  display: flex;
 }
 
