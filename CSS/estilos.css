@@ -430,3 +430,12 @@ th, td {
   cursor: pointer;
   width: 150px;
 }
+
+#edit{
+  border-radius: 6px;
+  width: 150px;
+  height: 55px;
+  margin: 10px;
+  background-color: #50bb67;
+  border-style: hidden;
+}
