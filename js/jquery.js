@@ -5,11 +5,11 @@ $(document).ready(function(){
         var contrasena = $("#clave").val();
 
         let mensaje="";
-        let enviar=false;
+        let enviar=true;
 
-        if(nombre.trim().length<4 || nombre.trim().lenght>10){
-            mensaje+= "El nombre de usuario debe tener al menos 4 a 10 caracteres";
-            enviar=true;
+        if(nombre.trim().length <= 4 || nombre.trim().lenght >= 10){
+            mensaje += "El nombre de usuario debe tener al menos 4 a 10 caracteres";
+            enviar = true;
         }
 
         var letra=nombre.charAt(0);
