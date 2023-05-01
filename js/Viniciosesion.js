@@ -7,39 +7,40 @@ $(document).ready(function(){
         let mensaje="";
         let enviar=false;
 
+        //Validar nombre
         if(nombre.trim().length < 4 || nombre.trim().length > 10){
-            mensaje += "El nombre de usuario debe tener al menos 4 a 10 caracteres";
+            mensaje += "Nombre: El nombre de usuario debe tener al menos 4 a 10 caracteres";
             enviar = true;
         }
 
         var letra=nombre.charAt(0);
         if(!esMayuscula(letra)){
-            mensaje+= "<br>El primer caracter debe ser mayuscula";
+            mensaje+= "<br>Nombre: El primer caracter debe ser mayuscula";
             enviar=true;
         }
         //validar password
         if(contrasena.trim().length < 8 || contrasena.trim().length > 12){
-            mensaje = mensaje + "<br>Debe tener entre 8 y 12 caracteres.";
+            mensaje = mensaje + "<br> Contraseña: Debe tener entre 8 y 12 caracteres.";
             enviar = true;
         }
 
         if(contrasena.trim()  == ""){
-            mensaje += "<br>No puede estar vacia.";
+            mensaje += "<br>Contraseña: No puede estar vacia.";
             enviar = true;
         }
 
         if (!contrasena.match(/([A-Z])/)){
-           mensaje += "<br>Debe contener al menos una mayuscula y una minuscula.";
+           mensaje += "<br>Contraseña: Debe contener al menos una mayuscula y una minuscula.";
             enviar = true;
         }
 
          if (!contrasena.match(/([0-9])/)){
-            mensaje += "<br>Debe contener al menos un digito numerico.";
+            mensaje += "<br>Contraseña: Debe contener al menos un digito numerico.";
             enviar = true;
          }
 
         if (!contrasena.match(/([@,#,.,,])/)){
-            mensaje += "<br>Debe contener un simbolo o caracter especial (@,#,.,,)";
+            mensaje += "<br>Contraseña: Debe contener un simbolo o caracter especial (@,#,.,,)";
             enviar = true;
          }
 
