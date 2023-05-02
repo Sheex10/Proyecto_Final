@@ -6,6 +6,7 @@ $(document).ready(function(){
         var email = $("#email").val();
         var contrasena = $("#clave").val();
         var confirmacion = $("#confirmacion").val();
+        var edad = $("#edad").val();
 
 
         let mensaje = "";
@@ -105,8 +106,11 @@ $(document).ready(function(){
             mensaje += "<br>Confirmacion: Debe contener un simbolo o caracter especial (@,#,.,,)";
             enviar = true;
          }
-
-
+         //Validar edad
+        if (!edad.match(/([0-9])/)){
+            mensaje += "<br>Edad: Debe contener valores numericos.";
+             enviar = true;
+         }
         
 
         if(enviar){
