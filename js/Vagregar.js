@@ -12,15 +12,15 @@ $(document).ready(function(){
 
         //Validar nombre
         if(nombre.trim().length < 4 || nombre.trim().length > 20){
-            mensaje += "Nombre: El nombre de usuario debe tener al menos 20 caracteres";
+            mensaje += "Nombre producto: El nombre del producto debe tener al menos 20 caracteres";
             enviar = true;
         }
         if (!nombre.match(/([A-Z])/)){
-            mensaje += "<br>Nombre: Debe contener al menos una mayuscula.";
+            mensaje += "<br>Nombre producto: Debe contener al menos una mayuscula.";
              enviar = true;
          }
          if (!nombre.match(/([a-z])/)){
-             mensaje += "<br>Nombre: Debe contener al menos una minuscula.";
+             mensaje += "<br>Nombre producto: Debe contener al menos una minuscula.";
               enviar = true;
           }
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
             enviar = true;
         }
         if (!descripcion.match(/([A-Z])/)){
-            mensaje += "<br>Descripcion: Debe contener al menos una mayuscula.";
+            mensaje += "<br>Descripcion: Debe comenzar con una mayuscula.";
              enviar = true;
          }
 

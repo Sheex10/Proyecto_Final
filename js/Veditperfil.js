@@ -1,74 +1,43 @@
 $(document).ready(function(){
     $("#loginform").submit(function(e){
         e.preventDefault();
-        var nombre = $("#nombre").val();
-        var apellido = $("#apellido").val();
         var usuario = $("#usuario").val();
+        var direccion = $("#direccion").val();
         var email = $("#email").val();
         var contrasena = $("#clave").val();
         var confirmacion = $("#confirmacion").val();
 
+
         let mensaje = "";
         let enviar = false;
 
-        //Validar nombre
-        if(nombre.trim().length < 4 || nombre.trim().length > 10){
-            mensaje += "Nombre: El nombre de usuario debe tener al menos 4 a 10 caracteres";
-            enviar = true;
-        }
-        if (!nombre.match(/([A-Z])/)){
-            mensaje += "<br>Nombre: Debe contener al menos una mayuscula.";
-             enviar = true;
-         }
-         if (!nombre.match(/([a-z])/)){
-             mensaje += "<br>Nombre: Debe contener al menos una minuscula.";
-              enviar = true;
-          }
-          /*
-        var letra=nombre.charAt(0);
-        if(!esMayuscula(letra)){
-            mensaje+= "<br>Nombre: El primer caracter debe ser mayuscula";
-            enviar=true;
-        }*/
-        //Validar apellido
-        if(apellido.trim().length < 4 || apellido.trim().length > 10){
-            mensaje += "<br>Apellido: El apellido debe tener al menos 4 a 10 caracteres";
-            enviar = true;
-        }
-        if (!apellido.match(/([A-Z])/)){
-            mensaje += "<br>Apellido: Debe contener al menos una mayuscula.";
-             enviar = true;
-         }
-         if (!apellido.match(/([a-z])/)){
-             mensaje += "<br>Apellido: Debe contener al menos una minuscula.";
-              enviar = true;
-          }
-          /*
-        var letra=apellido.charAt(0);
-        if(!esMayuscula(letra)){
-            mensaje+= "<br>Apellido: El primer caracter debe ser mayuscula";
-            enviar=true;
-        }*/
-        //Validar Usuario
+        //Validar usuario
         if(usuario.trim().length < 4 || usuario.trim().length > 10){
-            mensaje += "<br>Usuario: El usuario debe tener al menos 4 a 10 caracteres";
+            mensaje += "Usuario: El nombre de usuario debe tener al menos 4 a 10 caracteres";
             enviar = true;
         }
         if (!usuario.match(/([A-Z])/)){
-            mensaje += "<br>Contraseña: Debe contener al menos una mayuscula.";
+            mensaje += "<br>Usuario: Debe contener al menos una mayuscula.";
              enviar = true;
          }
          if (!usuario.match(/([a-z])/)){
-             mensaje += "<br>Contraseña: Debe contener al menos una minuscula.";
+             mensaje += "<br>Usuario: Debe contener al menos una minuscula.";
               enviar = true;
           }
-          /*
-        var letra=usuario.charAt(0);
-        if(!esMayuscula(letra)){
-            mensaje+= "<br>Usuario: El primer caracter debe ser mayuscula";
-            enviar=true;
-        }*/
-        //Validar email
+        //Validar direccion
+        if(direccion.trim().length < 4 || direccion.trim().length > 20){
+            mensaje += "<br>Direccion: La direccion debe tener al menos 4 a 10 caracteres";
+            enviar = true;
+        }
+        if (!direccion.match(/([A-Z])/)){
+            mensaje += "<br>Direccion: Debe contener al menos una mayuscula.";
+             enviar = true;
+         }
+         if (!direccion.match(/([a-z])/)){
+             mensaje += "<br>Direccion: Debe contener al menos una minuscula.";
+              enviar = true;
+          }
+          //Validar email
         if((email).trim().indexOf('@',0) == -1 || (email).trim().indexOf('.',0) == -1){
             mensaje += "<br>Email: El email debe tener contener @";
             enviar = true;
@@ -136,6 +105,10 @@ $(document).ready(function(){
             mensaje += "<br>Confirmacion: Debe contener un simbolo o caracter especial (@,#,.,,)";
             enviar = true;
          }
+
+
+        
+
         if(enviar){
             $("#warnings").html(mensaje);
         }
@@ -163,3 +136,4 @@ $(document).ready(function(){
     }
              
 });
+

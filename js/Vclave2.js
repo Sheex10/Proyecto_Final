@@ -50,9 +50,13 @@ $(document).ready(function(){
         }
 
         if (!confirmacion.match(/([A-Z])/)){
-           mensaje += "<br>Confirmacion: Debe contener al menos una mayuscula y una minuscula.";
+           mensaje += "<br>Confirmacion: Debe contener al menos una mayuscula.";
             enviar = true;
         }
+        if (!confirmacion.match(/([a-z])/)){
+            mensaje += "<br>Confirmacion: Debe contener al menos una minuscula.";
+             enviar = true;
+         }
 
          if (!confirmacion.match(/([0-9])/)){
             mensaje += "<br>Confirmacion: Debe contener al menos un digito numerico.";
