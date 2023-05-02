@@ -32,16 +32,16 @@ $(document).ready(function(){
 
         //Validar precio
         if (!precio.match(/([0-9])/)){
-            mensaje += "<br>Descripcion: Debe contener valores numericos.";
+            mensaje += "<br>Precio producto: Debe contener valores numericos.";
              enviar = true;
          }
         if (!precio.match(/([$])/)){
-            mensaje += "<br>Descripcion: Debe contener al menos el simbolo $.";
+            mensaje += "<br>Precio producto: Debe contener al menos el simbolo $.";
              enviar = true;
          }
         //Validar descripcion
         if(descripcion.trim().length < 20 || descripcion.trim().length > 200){
-            mensaje += "<br>Nombre: La descripcion del producto debe tener al menos 20 caracteres";
+            mensaje += "<br>Descripcion: La descripcion del producto debe tener al menos 20 caracteres";
             enviar = true;
         }
         if (!descripcion.match(/([A-Z])/)){
